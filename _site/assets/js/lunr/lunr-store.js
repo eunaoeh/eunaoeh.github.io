@@ -35,6 +35,12 @@ var store = [{
         "url": "/cs/intro/",
         "teaser": null
       },{
+        "title": "Flask",
+        "excerpt":"Flask Tutorial  ","categories": [],
+        "tags": [],
+        "url": "/dev/flask/",
+        "teaser": null
+      },{
         "title": "Quick-Start Guide",
         "excerpt":"Deep Learning Basics   NLP  CV  ","categories": [],
         "tags": [],

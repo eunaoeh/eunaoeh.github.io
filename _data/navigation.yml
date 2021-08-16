@@ -7,7 +7,7 @@ main:
   - title: "CS"
     url: /cs/intro/
   - title: "Development"
-    url: /dev/
+    url: /dev/flask/
 
 # deep learning sidebar links
 deep-learning:
@@ -19,8 +19,13 @@ deep-learning:
         url: /dl/nlp/
       - title: "CV"
         url: /dl/cv/
-      - title: "Naver AI Boost Camp"
+      - title: Model Serving
+        url: /dl/model-serving/
+  - title: "Naver AI Tech Boostcamp"
+    children:
+      - title: "NAVER AI Tech Boostcamp"
         url: /dl/naver-ai-boostcamp/
+      - title: "회고록"
 
 
 # computer science sidebar links
@@ -54,10 +59,10 @@ cs:
       - title: "Network"
         url: /cs/network/
 
-development:
+dev:
   - title: backend
     children:
       - title: Flask
         url: dev/backend/flask/
-      - title: Springboot
-        url: dev/backend/springboot/
+      # - title: Springboot
+      #   url: dev/backend/springboot/

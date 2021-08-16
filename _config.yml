@@ -15,7 +15,7 @@
 minimal_mistakes_skin    : "mint" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "ko-KO"
+locale                   : "ko"
 title                    : "Eunaoeh's Dev Blog"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
@@ -273,6 +273,7 @@ compress_html:
   ignore:
     envs: development
 
+# Collections
 collections_dir: _docs
 collections:
   dl:
@@ -290,7 +291,9 @@ collections:
   boj:
     output: true
     permalink: /cs/algorithm/:collection/:path/
-  
+  dev:
+    output: true
+    permalink: /:collection/:path/
 
 # Defaults
 defaults:
@@ -396,3 +399,15 @@ defaults:
       comments: false
       sidebar:
         nav: "deep-learning"
+  # _dev
+  - scope:
+      path: ""
+      type: dev
+    values:
+      layout: single
+      read_time: false
+      author_profile: false
+      share: false
+      comments: false
+      sidebar:
+        nav: "dev" 
