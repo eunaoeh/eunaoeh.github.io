@@ -1,18 +1,63 @@
 # main links
 main:
   - title: "About"
-    url: ""
+    url: "/about/"
   - title: "Deep Learning"
-    url:
+    url: /dl/deep-learning/
   - title: "CS"
-    url:
+    url: /cs/intro/
   - title: "Development"
-    url:
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+    url: /dev/
+
+# deep learning sidebar links
+deep-learning:
+  - title: "Deep Learning"
+    children:
+      - title: "Deep Learning"
+        url: /dl/deep-learning/
+      - title: "NLP"
+        url: /dl/nlp/
+      - title: "CV"
+        url: /dl/cv/
+      - title: "Naver AI Boost Camp"
+        url: /dl/naver-ai-boostcamp/
+
+
+# computer science sidebar links
+cs:
+  - title: "Computer-Science"
+    children:
+      - title: "Computer Science"
+        url: /cs/intro/
+  - title: "Algorithm"
+    children:
+      - title: "Algorithm"
+        url: /cs/algorithm/study/
+      - title: "BOJ"
+        url: /cs/algorithm/boj/problem-list/
+      - title: "Programmers"
+        url: /cs/algorithm/programmers/
+      - title: "Leetcode"
+        url: /cs/algorithm/leetcode/
+  - title: "Database System"
+    children:
+      - title: "Database"
+        url: /cs/db/study/
+      - title: "SQL"
+        url: /cs/db/sql/
+  - title: Operating System
+    children:
+      - title: "Operating System"
+        url: /cs/os/
+  - title: "Network"
+    children:
+      - title: "Network"
+        url: /cs/network/
+
+development:
+  - title: backend
+    children:
+      - title: Flask
+        url: dev/backend/flask/
+      - title: Springboot
+        url: dev/backend/springboot/

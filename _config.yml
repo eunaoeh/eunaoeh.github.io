@@ -15,7 +15,7 @@
 minimal_mistakes_skin    : "mint" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "ko"
+locale                   : "ko-KO"
 title                    : "Eunaoeh's Dev Blog"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
@@ -273,6 +273,24 @@ compress_html:
   ignore:
     envs: development
 
+collections_dir: _docs
+collections:
+  dl:
+    output: true
+    permalink: /:collection/:path/
+  cs:
+    output: true
+    permalink: /:collection/:path/
+  db:
+    output: true
+    permalink: /cs/:collection/:path/
+  algorithm:
+    output: true
+    permalink: /cs/:collection/:path/
+  boj:
+    output: true
+    permalink: /cs/algorithm/:collection/:path/
+  
 
 # Defaults
 defaults:
@@ -287,3 +305,94 @@ defaults:
       comments: # true
       share: true
       related: true
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+  # _cs
+  - scope:
+      path: ""
+      type: cs
+    values:
+      layout: single
+      read_time: false
+      author_profile: false
+      share: false
+      comments: false
+      sidebar:
+        nav: "cs"
+  # _algorithm
+  - scope:
+      path: ""
+      type: algorithm
+    values:
+      layout: single
+      read_time: false
+      author_profile: false
+      share: false
+      comments: false
+      sidebar:
+        nav: "cs"
+  # _boj
+  - scope:
+      path: ""
+      type: boj
+    values:
+      layout: single
+      read_time: false
+      author_profile: false
+      share: false
+      comments: false
+      sidebar:
+        nav: "cs"   
+  # _db
+  - scope:
+      path: ""
+      type: db
+    values:
+      layout: single
+      read_time: false
+      author_profile: false
+      share: false
+      comments: false
+      sidebar:
+        nav: "cs"
+  # _os
+  - scope:
+      path: ""
+      type: os
+    values:
+      layout: single
+      read_time: false
+      author_profile: false
+      share: false
+      comments: false
+      sidebar:
+        nav: "cs"
+  # _network
+  - scope:
+      path: ""
+      type: network
+    values:
+      layout: single
+      read_time: false
+      author_profile: false
+      share: false
+      comments: false
+      sidebar:
+        nav: "cs"
+  # _dl
+  - scope:
+      path: ""
+      type: dl
+    values:
+      layout: single
+      read_time: false
+      author_profile: false
+      share: false
+      comments: false
+      sidebar:
+        nav: "deep-learning"
