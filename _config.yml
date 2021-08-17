@@ -20,7 +20,7 @@ title                    : "Eunaoeh's Dev Blog"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Eunjin"
-description              : "An amazing website."
+description              : "..." # "An amazing website."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -59,8 +59,8 @@ reCaptcha:
 atom_feed:
   path                   : # blank (default) uses feed.xml
   hide                   : # true, false (default)
-search                   : # true, false (default)
-search_full_content      : # true, false (default)
+search                   : true # true, false (default)
+search_full_content      : true # true, false (default)
 search_provider          : # lunr (default), algolia, google
 algolia:
   application_id         : # YOUR_APPLICATION_ID
@@ -102,8 +102,8 @@ analytics:
 # Site Author
 author:
   name             : "Eunjin"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
+  avatar           : /assets/images/portfolio.jpeg # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : # "I am an **amazing** person."
   location         : "Somewhere"
   email            :
   links:
@@ -147,6 +147,13 @@ footer:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url:
+
+# Conversion
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
 
 
 # Reading Files
@@ -274,26 +281,8 @@ compress_html:
     envs: development
 
 # Collections
-collections_dir: _docs
+# collections_dir: docs
 collections:
-  dl:
-    output: true
-    permalink: /:collection/:path/
-  cs:
-    output: true
-    permalink: /:collection/:path/
-  db:
-    output: true
-    permalink: /cs/:collection/:path/
-  algorithm:
-    output: true
-    permalink: /cs/:collection/:path/
-  boj:
-    output: true
-    permalink: /cs/algorithm/:collection/:path/
-  dev:
-    output: true
-    permalink: /:collection/:path/
 
 # Defaults
 defaults:
@@ -315,99 +304,3 @@ defaults:
     values:
       layout: single
       author_profile: true
-  # _cs
-  - scope:
-      path: ""
-      type: cs
-    values:
-      layout: single
-      read_time: false
-      author_profile: false
-      share: false
-      comments: false
-      sidebar:
-        nav: "cs"
-  # _algorithm
-  - scope:
-      path: ""
-      type: algorithm
-    values:
-      layout: single
-      read_time: false
-      author_profile: false
-      share: false
-      comments: false
-      sidebar:
-        nav: "cs"
-  # _boj
-  - scope:
-      path: ""
-      type: boj
-    values:
-      layout: single
-      read_time: false
-      author_profile: false
-      share: false
-      comments: false
-      sidebar:
-        nav: "cs"   
-  # _db
-  - scope:
-      path: ""
-      type: db
-    values:
-      layout: single
-      read_time: false
-      author_profile: false
-      share: false
-      comments: false
-      sidebar:
-        nav: "cs"
-  # _os
-  - scope:
-      path: ""
-      type: os
-    values:
-      layout: single
-      read_time: false
-      author_profile: false
-      share: false
-      comments: false
-      sidebar:
-        nav: "cs"
-  # _network
-  - scope:
-      path: ""
-      type: network
-    values:
-      layout: single
-      read_time: false
-      author_profile: false
-      share: false
-      comments: false
-      sidebar:
-        nav: "cs"
-  # _dl
-  - scope:
-      path: ""
-      type: dl
-    values:
-      layout: single
-      read_time: false
-      author_profile: false
-      share: false
-      comments: false
-      sidebar:
-        nav: "deep-learning"
-  # _dev
-  - scope:
-      path: ""
-      type: dev
-    values:
-      layout: single
-      read_time: false
-      author_profile: false
-      share: false
-      comments: false
-      sidebar:
-        nav: "dev" 

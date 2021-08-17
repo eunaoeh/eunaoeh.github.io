@@ -1,55 +1,7 @@
 var store = [{
-        "title": "Algorithm",
-        "excerpt":"Alogrithm   BFS/DFS  ","categories": [],
-        "tags": [],
-        "url": "/cs/algorithm/study/",
+        "title": "[논문리뷰] Vision Transformer(ViT)",
+        "excerpt":"논문: “An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale”  핵심 요약     Image Recognition에 Transformer 모델을 적용   컴퓨터비전에서 CNN의 구조를 사용한 모델의 한계점을 극복   image patch를 linear embedding하여 트랜스포머 모델에 학습   Abstract  Vision Transformer(ViT)란 자연어처리(NLP) 분야에서 사실상 메인 모델이라고 할 수 있는 트랜스포머를 Image Classification 에 적용한 모델이다. 2021 ICLR에 구글 리서치 팀에서 발표한 논문으로,비전 분야에서도 CNN을 사용하지 않고 트랜스포머를 사용하여 좋은 성능을 낼 수 있다는 것이 핵심입니다. 컴퓨터비전에서는 보통 CNN을 기반으로 한 모델 구조를 사용하는데, 이번 논문에서는 CNN 구조를 활용하지 않아도 Image Classification에서 좋은 결과를 얻을 수 있었다고 합니다. ViT에서는 이미지를 패치로 잘라서 Vision Transfomer 모델에 학습을 시켰고, SOTA CNN 모델과 비교하였을 때 보다 적은 리소스로 좋은 성능을 냈다고 합니다.   Method  1. Vision Transformer(ViT)    [출처] “An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale”    모델의 구조는 트랜스포머 모델을 거의 똑같이 디자인하였습니다. 고정된 크기의 patch로 잘라진 이미지를 순서대로 embedding하여 인코더의 입력값으로 넣습니다. classification을 하기위해 “classification token”을 새로 추가하여 학습을 하였습니다.   2. Fine-tuning and Higher Resolution  ViT를 큰 데이터셋에 pre-train한 후, 작은 downstream tasks에 fine-tuning 합니다.   Experiment    [출처] “An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale”      Conclusion   출처     “An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale”      틀린 부분이나 부족한 점이 있다면 알려주시면 감사하겠습니다:)  ","categories": ["Paper Review","CV"],
+        "tags": ["CV","Image Classification","Paper Review","DL"],
+        "url": "/paper%20review/cv/ViT/",
         "teaser": null
-      },{
-        "title": "SQL",
-        "excerpt":"Leetcode Problem list  1.  ","categories": [],
-        "tags": [],
-        "url": "/cs/algorithm/leetcode/",
-        "teaser": null
-      },{
-        "title": "BOJ",
-        "excerpt":"Programmers Problem list  Algorithm  ","categories": [],
-        "tags": [],
-        "url": "/cs/algorithm/programmers/",
-        "teaser": null
-      },{
-        "title": "BOJ",
-        "excerpt":"BOJ Problem list  1.  ","categories": [],
-        "tags": [],
-        "url": "/cs/algorithm/boj/problem-list/",
-        "teaser": null
-      },{
-        "title": "BOJ",
-        "excerpt":"BOJ Problem list  1.  ","categories": [],
-        "tags": [],
-        "url": "/cs/algorithm/boj/1/",
-        "teaser": null
-      },{
-        "title": "Computer Science",
-        "excerpt":"Computer Science  ","categories": [],
-        "tags": [],
-        "url": "/cs/intro/",
-        "teaser": null
-      },{
-        "title": "Flask",
-        "excerpt":"Flask Tutorial  ","categories": [],
-        "tags": [],
-        "url": "/dev/flask/",
-        "teaser": null
-      },{
-        "title": "Quick-Start Guide",
-        "excerpt":"Deep Learning Basics   NLP  CV  ","categories": [],
-        "tags": [],
-        "url": "/dl/deep-learning/",
-        "teaser": null
-      },{
-        "title": "Naver AI Boostcamp 2기",
-        "excerpt":"Deep Learning  Test page  ","categories": [],
-        "tags": [],
-        "url": "/dl/naver-ai-boostcamp/",
-        "teaser": null
-      },]
+      }]

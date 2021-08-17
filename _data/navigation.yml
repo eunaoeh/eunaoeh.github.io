@@ -2,67 +2,10 @@
 main:
   - title: "About"
     url: "/about/"
-  - title: "Deep Learning"
-    url: /dl/deep-learning/
-  - title: "CS"
-    url: /cs/intro/
-  - title: "Development"
-    url: /dev/flask/
+  - title: "Home"
+    url: "/"
+  - title: "Categories"
+    url: /categories/
+  - title: "Tags"
+    url: /tags/
 
-# deep learning sidebar links
-deep-learning:
-  - title: "Deep Learning"
-    children:
-      - title: "Deep Learning"
-        url: /dl/deep-learning/
-      - title: "NLP"
-        url: /dl/nlp/
-      - title: "CV"
-        url: /dl/cv/
-      - title: Model Serving
-        url: /dl/model-serving/
-  - title: "Naver AI Tech Boostcamp"
-    children:
-      - title: "NAVER AI Tech Boostcamp"
-        url: /dl/naver-ai-boostcamp/
-      - title: "회고록"
-
-
-# computer science sidebar links
-cs:
-  - title: "Computer-Science"
-    children:
-      - title: "Computer Science"
-        url: /cs/intro/
-  - title: "Algorithm"
-    children:
-      - title: "Algorithm"
-        url: /cs/algorithm/study/
-      - title: "BOJ"
-        url: /cs/algorithm/boj/problem-list/
-      - title: "Programmers"
-        url: /cs/algorithm/programmers/
-      - title: "Leetcode"
-        url: /cs/algorithm/leetcode/
-  - title: "Database System"
-    children:
-      - title: "Database"
-        url: /cs/db/study/
-      - title: "SQL"
-        url: /cs/db/sql/
-  - title: Operating System
-    children:
-      - title: "Operating System"
-        url: /cs/os/
-  - title: "Network"
-    children:
-      - title: "Network"
-        url: /cs/network/
-
-dev:
-  - title: backend
-    children:
-      - title: Flask
-        url: dev/backend/flask/
-      # - title: Springboot
-      #   url: dev/backend/springboot/
