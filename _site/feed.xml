@@ -1,4 +1,142 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-08-20T01:38:30+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Eunaoeh’s Dev Blog</title><author><name>Eunjin</name></author><entry><title type="html">[논문리뷰] Vision Transformer(ViT)</title><link href="http://localhost:4000/paper%20review/cv/ViT/" rel="alternate" type="text/html" title="[논문리뷰] Vision Transformer(ViT)" /><published>2021-08-17T00:00:00+09:00</published><updated>2021-08-17T00:00:00+09:00</updated><id>http://localhost:4000/paper%20review/cv/ViT</id><content type="html" xml:base="http://localhost:4000/paper%20review/cv/ViT/">&lt;p&gt;&lt;br /&gt;&lt;br /&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-08-20T03:04:51+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Eunaoeh’s Dev Blog</title><author><name>Eunjin</name></author><entry><title type="html">Git이란</title><link href="http://localhost:4000/git/git/" rel="alternate" type="text/html" title="Git이란" /><published>2021-08-19T00:00:00+09:00</published><updated>2021-08-19T00:00:00+09:00</updated><id>http://localhost:4000/git/git</id><content type="html" xml:base="http://localhost:4000/git/git/">&lt;p&gt;&amp;lt;현재 작성 중 입니다!!&amp;gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h2 id=&quot;git이란&quot;&gt;Git이란&lt;/h2&gt;
+&lt;p&gt;Git이란 &lt;strong&gt;분산시스템을 기반으로한 형상관리도구&lt;/strong&gt;입니다.&lt;/p&gt;
+
+&lt;p&gt;Git을 공부하다보면 처음에는 “Git을 대체 왜 사용하는가”에 대한 의문을 가질 수 있습니다. 특히, 회사에 다녀보지 않았거나 큰 프로젝트를 진행해보지 못한 경우에는 더욱 그렇게 생각하실 수 있을 것 같습니다. 하지만, 프로젝트가 극단적으로 크다고 가정했을 경우 Git이란 협업을 가능하게 해주고 버전관리를 쉽게 해주는 유용한 도구입니다. 예를 들면&lt;a href=&quot;https://github.com/torvalds/linux&quot;&gt;리눅스 프로젝트&lt;/a&gt;를 예시로 들 수 있습니다. 이런 엄청나게 큰 프로젝트를 일일히 작성하고 관리하는 것은 더욱 어려운 일입니다. 이런 문제를 해결하기 위해 나온 것이 Git이라고 생각하면 될 것 같습니다.&lt;/p&gt;
+
+&lt;p&gt;Git을 처음 접해보는 분들께 저의 경험을 이야기해보자면, 저도 대학교 1년때 과제를 Git에 올리라는 이야기를 듣고 Git이 어떤 건지 이해를 못해서 과제 제출을 위한 명령어 순서를 외워서 올렸던 기억이 있습니다. git 명령어는 뭔지..어떤게 있는지 어려웠던 기억이 있네요. 요즘에는 Vscode, Source Tree, Gitkraken과 같이 git을 위한 좋은 gui 툴을 사용하면 되지만, 그 당시에는 지식이 부족하여 많이 헤맸습니다. (사실 1학년 지나고도 모르겠어서 git 공부만 여러 번 했던 것 같습니다…)&lt;/p&gt;
+
+&lt;h2 id=&quot;repository&quot;&gt;Repository&lt;/h2&gt;
+
+&lt;p&gt;이제 본격적으로 Git이 무엇인지 살펴봅시다. Git에는 &lt;strong&gt;저장소&lt;/strong&gt;라는 것이 있고, 이 저장소에는 히스토리, 소스코드, 소스코드의 브랜치, 프로그램의 여러 버전 등을 저장할 수 있습니다. Repository는 아래와 같이 2가지 종류가 있습니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Remote Repository&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;파일이나 소스를 원격 저장 공간에 저장 및 관리하는 곳으로 여러 사용자가 공유하기 위한 저장소&lt;/li&gt;
+  &lt;li&gt;git server program이라고 생각&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Local Repository&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;사용자의 PC에 파일이 저장되는 개인 저장소&lt;/li&gt;
+  &lt;li&gt;git client program이라고 생각&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;이렇게 로컬 저장소(Local Repository)와 원격 저장소(Remote Repository)에서 소스코드 버전관리를 할 수 있기 때문에 작업하기 빠르다는 장점이 있고, 로컬 혹은 원격저장시스템에 문제가 생겨도 쉽게 대응할 수 있습니다.&lt;/p&gt;
+
+&lt;center&gt;&lt;img src=&quot;/assets/images/2021-08-19-git/git-img1.png&quot; /&gt;&lt;/center&gt;
+
+&lt;p&gt;Git을 멀리서 보면 위의 이미지와 같이 요약할 수 있습니다. 흔히들 서버라고 부르는 원격저장소를 통해 소스코드를 저장, 버전 관리 등을 하고, 만약 사용자가 소스코드나 어떤 상태의 버전을 가지고 오고 싶다고 하면 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git clone&lt;/code&gt; 혹은 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git pull&lt;/code&gt;이라는 명령어를 통해서 원격저장소에 있는 소스코드들을 로컬 저장소로 가지고 올 수가 있습니다 (두 명령어의 차이는 밑에서 설명할 예정입니다.). 반대로 로컬 저장소에 있는 소스코드나 파일을 원격 저장소에 저장하고 싶다면 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git push&lt;/code&gt;를 통해 원격 저장소에 저장할 수 있습니다. 이렇게 로컬저장소에서 작업한 코드들을 원격 저장소에 저장할 수 있고, 다른 사람들이 작성한 코드를 원격 저장소에 저장해두면 받아올 수도 있습니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git clone&lt;/code&gt;과 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git pull&lt;/code&gt;의 차이점에 대해 더 알아봅시다.&lt;/p&gt;
+
+&lt;h3 id=&quot;clone&quot;&gt;clone&lt;/h3&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git clone [URL]&lt;/code&gt;를 통해 원격 저장소에 있는 모든 내용을 복사할 수 있습니다. clone을 하게 되면 자동적으로 내 로컬저장소를 생성하고 로컬 저장소를 url의 원격저장소와 연결하게 됩니다. 여기서 주의해야할 점 중 하나는 URL이란 보통 웹사이트의 주소가 아닌 아래의 이미지와 같이 원격 저장소의 주소를 가져와야합니다. 보통 github 페이지의 웹 상단에 보이는 주소는 원격저장소를 보여주기 위한 주소이기 때문에 원격 저장소의 주소와 다릅니다.&lt;/p&gt;
+
+&lt;center&gt;&lt;img src=&quot;/assets/images/2021-08-19-git/git-img2.png&quot; width=&quot;400&quot; /&gt;&lt;/center&gt;
+
+&lt;h3 id=&quot;pull&quot;&gt;pull&lt;/h3&gt;
+
+&lt;p&gt;pull이란 원격저장소에 소스코드의 최신 버전을 다운로드해서 내 로컬 저장소에다가 내용을 적용하는 것입니다.
+그렇기 때문에 이미 로컬저장소가 있는 상태에서 사용합니다. 만약 로컬저장소가 없다면 아래와 같이 설정하면 됩니다.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git init # 로컬 저장소 생성
+git remote add origin [URL] # 로컬 저장소를 원격 저장소와 연결
+git pull origin main # 원격 저장소에 있는 파일들을 가져옴
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;먼저 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git init&lt;/code&gt;을 통해 내 컴퓨터에 로컬 저장소를 만들수 있습니다. 이후, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git remote add orgin [URL]&lt;/code&gt;을 통해 origin이라는 이름을 가진 git 서버와 연결합니다. 이후 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git pull origin main&lt;/code&gt;이라는 명령어를 통해 origin 서버의 내용들을 main 브랜치(지금은 client 서버로 생각해도 됩니다.)로 가지고 옵니다. 사실 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git pull&lt;/code&gt;이라는 명령어는 자세히 보면 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git fetch&lt;/code&gt;와 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git merge&lt;/code&gt; 명령어를 합친 것이라고 생각하면 되는데, 이에 대해서는 나중에 다시 설명할 예정입니다.&lt;/p&gt;
+
+&lt;h3 id=&quot;origin-main&quot;&gt;Origin, Main&lt;/h3&gt;
+
+&lt;p&gt;명령어 예시에 origin과 main이 무엇인지 간단하게 알아봅시다.
+보통 원격저장소를 생성하면 &lt;strong&gt;origin&lt;/strong&gt;이라는 별칭이 붙고, 기본적으로 생성되는 초기 브랜치의 이름은 &lt;strong&gt;main&lt;/strong&gt;으로 설정됩니다. (예전에는 초기 상태 브랜치가 master였지만 2020년 10월 이후 main으로 변경됐다고 합니다.) 브랜치라는 것은 내가 현재 작업하고 있는 공간이라고 생각하시면 됩니다.&lt;/p&gt;
+
+&lt;h2 id=&quot;로컬-저장소에-파일-업로드하기commit&quot;&gt;로컬 저장소에 파일 업로드하기(Commit)&lt;/h2&gt;
+&lt;p&gt;로컬 저장소에 내가 현재 작업하고 있는 소스 코드들을 저장을 하기 위해서는 working tree, staging area, commit이 무엇인지 알아야합니다. 아래의 이미지를 보면 파일을 올리기 위해서는 3가지 과정이 필요합니다.&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;내가 현재 작업하고 있는 곳(Working Tree)에서 파일들을 수정합니다.&lt;/li&gt;
+  &lt;li&gt;로컬 저장소에 저장하기 위한 공간(Staging Area)에 저장합니다.&lt;/li&gt;
+  &lt;li&gt;이 공간에 있는 파일들을 로컬 저장소에 올립니다. (Commit 작업)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;이렇게 3가지의 과정을 통해 로컬 저장소에 파일들을 올릴 수 있습니다.&lt;/p&gt;
+
+&lt;center&gt;&lt;img src=&quot;/assets/images/2021-08-19-git/git-img3.png&quot; /&gt;&lt;/center&gt;
+
+&lt;h3 id=&quot;working-tree&quot;&gt;Working Tree&lt;/h3&gt;
+
+&lt;p&gt;Working Tree란 &lt;strong&gt;저장소의 어느 한 시점으로부터 사용자가 현재 작업하는 시점/공간&lt;/strong&gt;을 이야기합니다. 즉, 내가 어떤 버전의 프로그램의 소스코드들을 작성하고 있고, 그 때 내가 작업하는 파일 디렉토리라고 생각하시면 됩니다. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git status&lt;/code&gt;라는 명령어를 통해 현재 working tree의 수정된 파일들과 staging area에 있는 파일의 상태를 볼 수 있습니다.&lt;/p&gt;
+
+&lt;h3 id=&quot;staging-area&quot;&gt;Staging Area&lt;/h3&gt;
+
+&lt;p&gt;Staging Area란 &lt;strong&gt;원격 저장소에 Commit하기 전에 Commit을 준비하는 공간&lt;/strong&gt;이고, 인덱스라고도 합니다.
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git add&lt;/code&gt; 명령어를 사용해서 원하는 파일들을 &lt;strong&gt;staging area&lt;/strong&gt;로 보낼 수 있습니다.&lt;/p&gt;
+
+&lt;p&gt;파일 별로 추가: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git add {file_name}&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;모든 파일 추가: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git add .&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;모든 파일 add 취소: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git reset HEAD&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;파일별로 add 취소:  &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git reset HEAD {file_name}&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;commit&quot;&gt;Commit&lt;/h3&gt;
+
+&lt;p&gt;Commit이란 &lt;strong&gt;변경된 사항을 확정하고 저장소에 저장하는 작업&lt;/strong&gt;입니다. 각 커밋마다 알파벳, 숫자로 이루어진 40자리 고유 이름이 생성되고 이를 사용해서 이전 버전으로 확인, 복구 등의 작업을 할 수 있습니다. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git commit&lt;/code&gt; 또는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git commit -m [message]&lt;/code&gt;라는 명령어를 통해 내가 커밋할 내용에 대한 메세지를 작성(예. file.py를 수정했습니다)하고 로컬 저장소에 저장할 수 있습니다.&lt;/p&gt;
+
+&lt;h4 id=&quot;commit-message-작성&quot;&gt;Commit Message 작성&lt;/h4&gt;
+&lt;p&gt;다른 사람과 같이 작업을 하는 경우에는 협업 효율을 위해 좋은 커밋 메세지를 적는 방법도 중요합니다. 보통 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git commit -m [message]&lt;/code&gt;를 통해서 간단하게 메세지를 적을 수도 있지만, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git commit&lt;/code&gt; 후 더 자세한 commit message 작성할 수 있습니다.
+좋은 커밋 메세지를 적는 방법은 &lt;a href=&quot;https://meetup.toast.com/posts/106&quot;&gt;이 링크&lt;/a&gt;를 통해 더욱 자세히 볼 수 있습니다.
+또한, 예시로 &lt;a href=&quot;https://github.com/facebookresearch/detectron2/commit/cd60faf1427f95d357ba30365a415d0309a8618f&quot;&gt;이 링크&lt;/a&gt;를 통해 Facebook AI 팀에서는 어떤 방식으로 메세지를 올리는지 확인해볼 수 있습니다.&lt;/p&gt;
+
+&lt;h3 id=&quot;git의-파일-관리&quot;&gt;Git의 파일 관리&lt;/h3&gt;
+&lt;p&gt;로컬 저장소에서 파일 관리는 아래와 같이 3가지의 상태로 나타낼 수 있습니다.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Modified: 로컬에서 작업한 후 변경된 내용&lt;/li&gt;
+  &lt;li&gt;Committed: 로컬에서 작업한 후 로컬 저장소에 저장된 상태&lt;/li&gt;
+  &lt;li&gt;Staged: Modified하여 곧 Commit이 될 파일들&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;head&quot;&gt;Head&lt;/h3&gt;
+
+&lt;!-- 현재 작업중인 Branch를 가리킨다. --&gt;
+
+&lt;h3 id=&quot;branch&quot;&gt;Branch&lt;/h3&gt;
+&lt;!-- 
+- 작업을 할때 다른 가지에서 새로운 가지를 치고(현재 상태를 복사) 생성한 브랜치에서 작업 후 다른 브랜치랑 Merge를 하는 방식으로 작업을 한다.
+- 보통 개발 브랜치, feature 브랜치 등으로 나누어서 통합하고 메인 브랜치에 통합하는 방식으로 진행된다.
+
+브랜치 생성: `git branch {생성할 브랜치 이름}`
+
+브랜치 변경: `git checkout {이동할 브랜치 이름}`
+
+로컬 저장소의 브랜치 확인:  `git branch`
+
+원격 저장소의 브랜치 확인:  `git branch -r`
+
+모든 브랜치 확인:  `git branch -a`
+
+원격 저장소의 브랜치 가져오기&amp;가져온 브랜치로 브랜치 변경: `git checkout -t {원격 저장소의 브랜치}`
+ --&gt;
+
+&lt;h2 id=&quot;git-flow&quot;&gt;Git Flow&lt;/h2&gt;
+
+&lt;p&gt;Git에 대해 조금 더 알아봅시다. Git을 과연 어떻게 효율적으로 사용할 수 있을까에 대한 고민을 하실 수 있을 겁니다. 만약 이게 간단한 프로젝트라면 그냥 혼자서 파일을 업로드하고 수정하면 되지만, 많은 사람이 함께 기능들을 개발하는 경우에는 브랜치를 어떻게 생성하고 개발할지에 대한 고민을 할 수 있을 겁니다. 이를 위한 Git을 잘 사용하는 전략인 Git Flow를 살펴볼 수 있습니다. Git Flow란 Git으로 협업할 때, 브랜치 전략이라고 할 수 있습니다.&lt;/p&gt;
+
+&lt;p&gt;예시를 살펴보면 “우아한 형제들”에서 사용하는 Git Flow를 보면 이해가 되실 거라고 생각합니다.&lt;/p&gt;
+
+&lt;p&gt;예시) &lt;a href=&quot;https://woowabros.github.io/experience/2017/10/30/baemin-mobile-git-branch-strategy.html&quot;&gt;우아한 형제들 Git Flow&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;reference&quot;&gt;Reference&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;NAVER AI Boostcamp의 이고잉님의 특강&lt;/li&gt;
+  &lt;li&gt;내 머릿속과 노트&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Eunjin</name></author><category term="git" /><category term="git" /><category term="dev" /><summary type="html">&amp;lt;현재 작성 중 입니다!!&amp;gt;</summary></entry><entry><title type="html">[논문리뷰] Vision Transformer(ViT)</title><link href="http://localhost:4000/paper%20review/cv/ViT/" rel="alternate" type="text/html" title="[논문리뷰] Vision Transformer(ViT)" /><published>2021-08-17T00:00:00+09:00</published><updated>2021-08-17T00:00:00+09:00</updated><id>http://localhost:4000/paper%20review/cv/ViT</id><content type="html" xml:base="http://localhost:4000/paper%20review/cv/ViT/">&lt;p&gt;&lt;br /&gt;&lt;br /&gt;
 논문: &lt;a href=&quot;https://arxiv.org/pdf/2010.11929.pdf&quot;&gt;“An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale”&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;핵심-요약&quot;&gt;핵심 요약&lt;/h2&gt;
