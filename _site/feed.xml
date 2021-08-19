@@ -1,7 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-08-18T14:16:41+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Eunaoeh’s Dev Blog</title><subtitle>...</subtitle><author><name>Eunjin</name></author><entry><title type="html">[논문리뷰] Vision Transformer(ViT)</title><link href="http://localhost:4000/paper%20review/cv/ViT/" rel="alternate" type="text/html" title="[논문리뷰] Vision Transformer(ViT)" /><published>2021-08-17T00:00:00+09:00</published><updated>2021-08-17T00:00:00+09:00</updated><id>http://localhost:4000/paper%20review/cv/ViT</id><content type="html" xml:base="http://localhost:4000/paper%20review/cv/ViT/">&lt;p&gt;&lt;br /&gt;
-&amp;lt; 현재 페이지는 아직 작성중입니다. &amp;gt;
-&lt;br /&gt;&lt;br /&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-08-20T01:38:30+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Eunaoeh’s Dev Blog</title><author><name>Eunjin</name></author><entry><title type="html">[논문리뷰] Vision Transformer(ViT)</title><link href="http://localhost:4000/paper%20review/cv/ViT/" rel="alternate" type="text/html" title="[논문리뷰] Vision Transformer(ViT)" /><published>2021-08-17T00:00:00+09:00</published><updated>2021-08-17T00:00:00+09:00</updated><id>http://localhost:4000/paper%20review/cv/ViT</id><content type="html" xml:base="http://localhost:4000/paper%20review/cv/ViT/">&lt;p&gt;&lt;br /&gt;&lt;br /&gt;
 논문: &lt;a href=&quot;https://arxiv.org/pdf/2010.11929.pdf&quot;&gt;“An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale”&lt;/a&gt;&lt;/p&gt;
+
 &lt;h2 id=&quot;핵심-요약&quot;&gt;핵심 요약&lt;/h2&gt;
 &lt;ul&gt;
   &lt;li&gt;Image Recognition에 NLP에서 사용되던 모델 Transformer를 적용&lt;/li&gt;
@@ -9,7 +8,7 @@
   &lt;li&gt;Image patch를 linear embedding하여 트랜스포머와 거의 같은 구조의 모델에 학습&lt;/li&gt;
   &lt;li&gt;CNN 기반의 SOTA 모델보다 좋은 성능
     &lt;ul&gt;
-      &lt;li&gt;단, 큰 데이터셋으로 pre-trained 후 fine-tuning이 필요&lt;/li&gt;
+      &lt;li&gt;단, 대량의 데이터셋으로 pre-trained 후 fine-tuning이 필요&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
@@ -19,36 +18,63 @@
 
 &lt;h2 id=&quot;method&quot;&gt;Method&lt;/h2&gt;
 &lt;h3 id=&quot;1-vision-transformervit&quot;&gt;1. Vision Transformer(ViT)&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/images/2021-08-17-ViT/vit.png&quot; alt=&quot;vit&quot; /&gt; 
+&lt;p&gt;&lt;img src=&quot;/assets/images/2021-08-17-ViT/ViT.png&quot; alt=&quot;vit&quot; /&gt; 
 [출처] “An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale”
 &lt;br /&gt;
 &lt;br /&gt;
-모델의 구조는 트랜스포머 모델을 거의 똑같이 디자인하였습니다. 고정된 크기의 patch로 잘라진 이미지를 순서대로 embedding하여 인코더의 입력값으로 넣습니다. 
-이미지의 차원이 $\mathbf{x} \in \mathbb{R}^{H \times W \times C}$이고, patch의 해상도가 (P, P)라고 하면 $\mathbf{x}_{p} \in \mathbb{R}^{N \times\left(P^{2} \cdot C\right)}$ 으로 flatten시킵니다. 여기서 트랜스포머는 인코더에서 정해진 입력의 크기를 사용하기 때문에 이를 맞춰주기 위해 입력 차원을 D 차원을 linear projection을 해줍니다. 이 linear project의 결과 값에 positional embedding을 추가해준 값이 ViT의 인코더의 입력값으로 들어가게 됩니다. 
+모델의 구조는 위의 이미지와 같이 트랜스포머 모델의 인코더와 거의 똑같이 디자인되어있습니다. 고정된 크기의 patch로 잘라진 이미지를 순서대로 embedding하여 인코더의 입력값으로 넣습니다. 
+이미지의 차원이 $\mathbf{x} \in \mathbb{R}^{H \times W \times C}$이고, patch의 해상도가 $(P, P)$라고 하면 $\mathbf{x}_{p} \in \mathbb{R}^{N \times\left(P^{2} \cdot C\right)}$ 으로 flatten시킵니다. 여기서 트랜스포머는 인코더에서 정해진 입력의 크기를 사용하기 때문에 이를 맞춰주기 위해 입력 차원을 D 차원을 linear projection을 해줍니다. 이 linear project의 결과 값에 positional embedding을 추가해준 값이 ViT의 인코더의 입력값으로 들어가게 됩니다. 그리고 활성화 함수로는 GELU를 사용하였습니다.
 &lt;!-- classification을 하기위해 &quot;classification token&quot;을 새로 추가하여 학습을 하였습니다.  --&gt;&lt;/p&gt;
 
-&lt;p&gt;Positinal Embedding은 이미지의 공간적인 정보를 위해 1D learnable embeddings을 추가하여 학습시켰습니다.&lt;/p&gt;
+&lt;p&gt;Positinal Embedding은 이미지의 공간적인 정보를 위해 1D learnable embedding 벡터를 추가하여 학습시켰습니다. 2D learnable embedding 벡터로 실험도 해보았지만, 성능이 크게 향상되지 않아서 1D로 학습했다고 되어있습니다.&lt;/p&gt;
 
 &lt;h4 id=&quot;inductive-bias&quot;&gt;Inductive Bias&lt;/h4&gt;
 &lt;p&gt;&lt;a href=&quot;https://velog.io/@euisuk-chung/Inductive-Bias%EB%9E%80&quot;&gt;Inductive Bias&lt;/a&gt;에 대한 설명은 링크에 잘 나와있습니다.
 ViT에서는 MLP 레이어에서만 Locality와 Translation Equivariance한 특징을 가지고 있고, Self-Attention Layer에서는 Global한 이미지의 feature를 학습하게 됩니다. 아마, Transformer 모델의 구조를 이해하셨다면 쉽게 이해가 되실 겁니다. 즉, 다른 이미지 패치와의 Attention을 학습하기 때문에 Global한 feature를 학습한다고 할 수 있습니다.
-Fine-tuning시에는 다른 해상도의 이미지를 사용하는 경우, 패치의 2D 공간에 대한 정보를 가지고 있지 않기 때문에 positional embedding을 처음부터 학습해야합나다.&lt;/p&gt;
+이렇게 학습된 임베딩 벡터는 MLP에서 Classification이 수행됩니다.
+Fine-tuning시에는 다른 해상도의 이미지를 사용하는 경우, 패치의 2D 공간에 대한 정보를 가지고 있지 않기 때문에 positional embedding을 scratch부터 학습해야합나다.&lt;/p&gt;
+
+&lt;h4 id=&quot;hybrid-architecture&quot;&gt;Hybrid Architecture&lt;/h4&gt;
+&lt;p&gt;Hybrid 구조에서는 CNN에서 나온 feature map을 ViT의 입력값으로 넣어 학습시킵니다. 마찬가지로 dimension D로 linear projection이 그대로 feature map에 적용이 되고, 그 값에 positional embedding이 더해집니다.&lt;/p&gt;
 
 &lt;h3 id=&quot;2-fine-tuning-and-higher-resolution&quot;&gt;2. Fine-tuning and Higher Resolution&lt;/h3&gt;
-&lt;p&gt;ViT를 큰 데이터셋에 pre-train한 후, 작은 downstream tasks에 fine-tuning 합니다.&lt;/p&gt;
+&lt;p&gt;대량의 데이터셋에 pre-train한 후, 작은 downstream tasks에 fine-tuning 합니다. fine-tuning시, prediction head를 제거하고 $D \times K$ feedforward layer를 0으로 초기화하여 다시 학습시킵니다. 만약 같은 patch 크기에 더 높은 해상도의 이미지로 fine-tuning을 시키는 경우, 더 긴 sequence를 사용하게 되고 정확도 향상에도 도움이 된다고 알려져있습니다.&lt;/p&gt;
 
 &lt;h2 id=&quot;experiment&quot;&gt;Experiment&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/images/2021-08-17-ViT/ViT-exp.png&quot; alt=&quot;ViT-exp&quot; /&gt; 
-[출처] “An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale”
-&lt;br /&gt;
+&lt;p&gt;Pre-training은 아래의 세가지 데이터셋을 활용해서 학습하였고, JFT로 학습시켰을 때 성능이 제일 좋은 것을 확인해볼 수 있습니다.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;ImageNet&lt;/li&gt;
+  &lt;li&gt;ImageNet-21K&lt;/li&gt;
+  &lt;li&gt;JFT-300M&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;CNN 계열에서 SOTA 모델이라고 할 수 있는 BiT와 비교했을 때 결과는 아래와 같다. JFT로 pre-train되고 parameter의 개수가 가장 많은 모델이 성능이 제일 높게 나오는 것을 확인할 수 있습니다. 그 외에 다른 hyparameter와 환경 세팅은 논문에 나와있으니 참고하시면 될 것 같습니다. 
 &lt;br /&gt;&lt;/p&gt;
+
+&lt;center&gt;&lt;img src=&quot;/assets/images/2021-08-17-ViT/ViT-exp3.png&quot; width=&quot;500&quot; /&gt;&lt;/center&gt;
+&lt;center&gt;&lt;img src=&quot;/assets/images/2021-08-17-ViT/ViT-exp1.png&quot; width=&quot;700&quot; /&gt;&lt;/center&gt;
+&lt;p&gt;[출처] “An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale”&lt;/p&gt;
+
+&lt;p&gt;아래는 입력 이미지와 ViT 모델을 통해 Attention이 학습된 결과 이미지 입니다.&lt;/p&gt;
+&lt;center&gt;&lt;img src=&quot;/assets/images/2021-08-17-ViT/ViT-exp2.png&quot; width=&quot;250&quot; /&gt;&lt;/center&gt;
+&lt;p&gt;[출처] “An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale”&lt;/p&gt;
 
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
 
-&lt;h2 id=&quot;출처&quot;&gt;출처&lt;/h2&gt;
+&lt;p&gt;논문에서는 이미지를 NLP처럼 sequence로 프로세싱하여 트랜스포머 모델에 학습시켜 CNN 계열의 SOTA 모델만큼의 성능을 냈고, 상대적으로 pre-train 비용이 적고, scalable하다는 장점이 있다고 합니다. 
+앞으로 도전해야할 2가지는&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;ViT를 detection과 segmentation과 같은 다른 비전 분야에 ViT 모델에 적용시키는 것&lt;/li&gt;
+  &lt;li&gt;self-supervised pre-training 방법을 계속 시도하는 것
+이라고 합니다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;제가 알고 있기로는 ECCV 2020에 페이스북 AI에서 트랜스포머 모델을 Detection에 적용한 연구라는 모델에 대한 논문을 냈습니다.  마찬가지로 다른 CNN 계열의 SOTA Detection 모델이 이상의 성능을 낸 걸로 알고 있습니다. 나중에 &lt;a href=&quot;https://arxiv.org/pdf/2005.12872.pdf&quot;&gt;이 논문&lt;/a&gt;도 리뷰할 예정이니 관심이 있으신 분들은 읽어보시면 좋을 것 같습니다.&lt;/p&gt;
+
+&lt;h2 id=&quot;reference&quot;&gt;Reference&lt;/h2&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://arxiv.org/pdf/2010.11929.pdf&quot;&gt;“An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale”&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;br /&gt;
-틀린 부분이나 부족한 점이 있다면 알려주시면 감사하겠습니다:)&lt;/p&gt;</content><author><name>Eunjin</name></author><category term="Paper Review" /><category term="CV" /><category term="CV" /><category term="Image Classification" /><category term="Paper Review" /><category term="DL" /><summary type="html">&amp;lt; 현재 페이지는 아직 작성중입니다. &amp;gt; 논문: “An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale” 핵심 요약 Image Recognition에 NLP에서 사용되던 모델 Transformer를 적용 컴퓨터비전에서 CNN의 구조를 사용한 모델 구조를 대체 Image patch를 linear embedding하여 트랜스포머와 거의 같은 구조의 모델에 학습 CNN 기반의 SOTA 모델보다 좋은 성능 단, 큰 데이터셋으로 pre-trained 후 fine-tuning이 필요</summary></entry></feed>
+틀린 부분이나 부족한 점이 있다면 알려주시면 감사하겠습니다:)&lt;/p&gt;</content><author><name>Eunjin</name></author><category term="Paper Review" /><category term="CV" /><category term="CV" /><category term="Image Classification" /><category term="Paper Review" /><category term="DL" /><summary type="html">논문: “An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale”</summary></entry></feed>
