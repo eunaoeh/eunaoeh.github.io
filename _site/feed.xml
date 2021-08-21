@@ -1,8 +1,61 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-08-21T16:09:47+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Eunaoeh’s Dev Blog</title><author><name>Eunjin</name></author><entry><title type="html">NAVER AI Tech Boostcamp Week3 회고록</title><link href="http://localhost:4000/naver%20ai%20tech%20boostcamp/week3/" rel="alternate" type="text/html" title="NAVER AI Tech Boostcamp Week3 회고록" /><published>2021-08-21T00:00:00+09:00</published><updated>2021-08-21T00:00:00+09:00</updated><id>http://localhost:4000/naver%20ai%20tech%20boostcamp/week3</id><content type="html" xml:base="http://localhost:4000/naver%20ai%20tech%20boostcamp/week3/">&lt;h2 id=&quot;이번주에-한-일&quot;&gt;이번주에 한 일&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-08-21T17:07:46+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Eunaoeh’s Dev Blog</title><author><name>Eunjin</name></author><entry><title type="html">NAVER AI Tech Boostcamp Week1 회고록</title><link href="http://localhost:4000/naver%20ai%20tech%20boostcamp/week1/" rel="alternate" type="text/html" title="NAVER AI Tech Boostcamp Week1 회고록" /><published>2021-08-21T00:00:00+09:00</published><updated>2021-08-21T00:00:00+09:00</updated><id>http://localhost:4000/naver%20ai%20tech%20boostcamp/week1</id><content type="html" xml:base="http://localhost:4000/naver%20ai%20tech%20boostcamp/week1/">&lt;h2 id=&quot;이번주에-한-일&quot;&gt;이번주에 한 일&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;최성준 교수님의 Python, Numpy, Pandas 강의를 들었다.&lt;/li&gt;
+  &lt;li&gt;임성빈 교수님의 기초 확률통계론, 수학, 경사하강법, 기초 RNN, 기초 CNN 강의를 들었다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;좋았던-점&quot;&gt;좋았던 점&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;AI에 관한 경사하강법에 대해 확실하게 이해하고 넘어갈 수 있었다.&lt;/li&gt;
+  &lt;li&gt;확률통계론은 아직도 어렵지만 예전보다는 많이 익숙해졌다. 임성빈 교수님께서 수학은 익숙해지고 꾸준히 하는 것이 중요하다고 하셨다. 교수님께서는 아직도 매일 수학공부를 하신다고 하셨다..&lt;/li&gt;
+  &lt;li&gt;임성빈 교수님의 마스터 클래스를 듣고 대학원에 대한 생각을 정리할 수 있어서 좋았다. 생소한 분야는 가는 것이 거의 필수지만, 그게 아니라면 꼭 필요한 것은 아니라고 하셨다.&lt;/li&gt;
+  &lt;li&gt;멘토링 시간 때, 그 동안 궁금했던 것(포트폴리오나 진로 등)에 대한 궁금증을 해결할 수 있었다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;아쉬웠던-점&quot;&gt;아쉬웠던 점&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;첫 주차에 Precourse + 강의여서 그런지 너무 정신없게 지낸 것 같다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;개선시도할-점&quot;&gt;개선/시도할 점&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;앞으로도 강의가 이렇게 많으면 부지런하게 공부하는 것이 중요할 것 같다.&lt;/li&gt;
+  &lt;li&gt;시간관리 잘 하고 다른 공부도 꾸준히 하자!&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Eunjin</name></author><category term="NAVER AI Tech Boostcamp" /><category term="NAVER AI Tech Boostcamp" /><category term="AI" /><category term="회고록" /><summary type="html">이번주에 한 일 최성준 교수님의 Python, Numpy, Pandas 강의를 들었다. 임성빈 교수님의 기초 확률통계론, 수학, 경사하강법, 기초 RNN, 기초 CNN 강의를 들었다.</summary></entry><entry><title type="html">NAVER AI Tech Boostcamp Week2 회고록</title><link href="http://localhost:4000/naver%20ai%20tech%20boostcamp/week2/" rel="alternate" type="text/html" title="NAVER AI Tech Boostcamp Week2 회고록" /><published>2021-08-21T00:00:00+09:00</published><updated>2021-08-21T00:00:00+09:00</updated><id>http://localhost:4000/naver%20ai%20tech%20boostcamp/week2</id><content type="html" xml:base="http://localhost:4000/naver%20ai%20tech%20boostcamp/week2/">&lt;h2 id=&quot;이번주에-한-일&quot;&gt;이번주에 한 일&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;최성준 교수님의 Deep Learning Basics 강의를 들었다.&lt;/li&gt;
+  &lt;li&gt;이고잉님의 Github 강의를 들었다.&lt;/li&gt;
+  &lt;li&gt;최성준 교수님의 마스터 클래스 강의를 들었다.&lt;/li&gt;
+  &lt;li&gt;블로그를 시작했다.&lt;/li&gt;
+  &lt;li&gt;피어들과 알고리즘 스터디를 진행했다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;좋았던-점&quot;&gt;좋았던 점&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;사실 귀찮아서 터미널 꾸미기나 컴퓨터정리를 안 하고 있었는데 이번 기회에 꾸몄더니 기분이 좋아졌다. 이거 하는데도 삽질을 많이 해서 나중에 시간이 되면 올리도록 하겠다.&lt;/li&gt;
+  &lt;li&gt;드디어 github 블로그를 만들었다!! 블로그도 만드는데 아주아주아주 많은 삽질을 하였다. 대체 왜 내 노트북에는 설치가 안 되는지….고생했지만 이제 끝!&lt;/li&gt;
+  &lt;li&gt;블로그 구조도 원래는 상단 카테고리 바에 모든 걸 보여주고 싶어서 그렇게 만들었는데 막상 사이드바까지 만들고 나니까 복잡한 것 같아서 무난한 기본 세팅으로 변경했다.&lt;/li&gt;
+  &lt;li&gt;이고잉님의 Git 강의를 들으면서 Git의 기본적인 기능에 대해 이해할 수 있었고, vscode gui로 쉽게 git commit하는 법까지 배울 수 있었다. vscode 터미널로만 git을 사용했는데 gui 사용하는 방법도 있다는 것을 알았지만, git graph 보는 것 말고는 잘 안 쓸 것 같다..&lt;/li&gt;
+  &lt;li&gt;수강신청도 사실 잡을 건 많이 없었지만 올클해서 기분이 좋다.&lt;/li&gt;
+  &lt;li&gt;AI 부스트캠프 온보딩키트를 드디어 받았다!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;아쉬웠던-점&quot;&gt;아쉬웠던 점&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;RNN, GAN에 대한 아이디어에 대한 감은 잡았지만, 자세한 수식까지 이해하는건 좀 힘이 들었다. 사실 다 이해 못 했지만, 주말에 시간 나면 공부해야겠다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;개선시도할-점&quot;&gt;개선/시도할 점&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;블로그에 꾸준히 글 올리자!&lt;/li&gt;
+  &lt;li&gt;알고리즘도 꾸준히 하자!&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Eunjin</name></author><category term="NAVER AI Tech Boostcamp" /><category term="NAVER AI Tech Boostcamp" /><category term="AI" /><category term="회고록" /><summary type="html">이번주에 한 일 최성준 교수님의 Deep Learning Basics 강의를 들었다. 이고잉님의 Github 강의를 들었다. 최성준 교수님의 마스터 클래스 강의를 들었다. 블로그를 시작했다. 피어들과 알고리즘 스터디를 진행했다.</summary></entry><entry><title type="html">NAVER AI Tech Boostcamp Week3 회고록</title><link href="http://localhost:4000/naver%20ai%20tech%20boostcamp/week3/" rel="alternate" type="text/html" title="NAVER AI Tech Boostcamp Week3 회고록" /><published>2021-08-21T00:00:00+09:00</published><updated>2021-08-21T00:00:00+09:00</updated><id>http://localhost:4000/naver%20ai%20tech%20boostcamp/week3</id><content type="html" xml:base="http://localhost:4000/naver%20ai%20tech%20boostcamp/week3/">&lt;h2 id=&quot;이번주에-한-일&quot;&gt;이번주에 한 일&lt;/h2&gt;
 &lt;ul&gt;
   &lt;li&gt;이번주에는 Pytorch에 대한 강의를 들었다. 인턴을 하면서 Pytorch를 대충 사용할 수 있다고 생각했지만 몰랐던 부분, 잊고 있었던 부분을 리마인드 할 수 있었다.&lt;/li&gt;
   &lt;li&gt;과제 마감에만 집중을 하니 그냥 넘긴 부분도 있어서 다시 복습하고 블로그에 정리해야할 것 같다.&lt;/li&gt;
   &lt;li&gt;부스트캠프를 하느라 알고리즘, 개인공부, 블로그를 많이 못 했다.&lt;/li&gt;
+  &lt;li&gt;안수빈님의 데이터 시각화 강의도 들었다.&lt;/li&gt;
+  &lt;li&gt;라이엇 게임즈 유석문CTO님의 ‘개발자로 산다는것’, ‘Unit Test’ 강의를 들었다.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;좋았던-점&quot;&gt;좋았던 점&lt;/h2&gt;
@@ -11,7 +64,9 @@
   &lt;li&gt;기본 Documentation 뿐만 아니라 Ray Tune, Multi-GPU 등에 대해서도 간단하게 설명을 해주셔서 많은 도움이 되었다.&lt;/li&gt;
   &lt;li&gt;그 동안 Pytorch, Detectron2(CV 프레임워크)처럼 Documentation의 함수를 뜯어보면서 공부를 했었는데 수업에서도 그렇게 하는 게 좋다고 말씀해주셔서 방향을 잘 잡고 공부했구나라는 생각이 들었다.&lt;/li&gt;
   &lt;li&gt;최성철 교수님의 마스터세션을 듣고, 무엇을 공부하면 될지 조금 더 확신이 생긴 것 같다.&lt;/li&gt;
-  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;혼자서 matplotlib을 공부할 때는 내가 만든 시각화가 정말 안 예쁘다고 생각했는데 어떻게 해야 에쁘게 그릴 수 있고, 내가 원하는 정보를 잘 전달할 수 있는지 안수빈님의 강의를 통해서 배울 수 있어서 너무 좋았다. Pytorch를 보다가 데이터 시각화 강의를 들으면 힐링하는 것 같아 마음이 편했다.&lt;/li&gt;
+  &lt;li&gt;Transformer에 관심이 있어 Vision Transformer 논문을 읽어봐야지라고 인턴 때 생각했는데, 드디어 읽어볼 수 있었다. 블로그에 정리까지 완료!&lt;/li&gt;
+  &lt;li&gt;SDS 알고리즘 강의 수료증이 코로나 때문에 돌고 돌아서 3주만에 왔다!&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;아쉬웠던-점&quot;&gt;아쉬웠던 점&lt;/h2&gt;
@@ -20,6 +75,7 @@
   &lt;li&gt;MLOps도 공부해야지라고 생각했는데 막상 시간이 잘 안 나는 것 같다. 괜히 한다했다가 개강하고 나면 시간이 아예 없을까봐 걱정된다.&lt;/li&gt;
   &lt;li&gt;Pytorch를 사용해서 직접 모델을 End-to-End로 구현하고 싶은데 수업정리, 과제마감을 하다보면 지쳐서 하기 힘들었다.&lt;/li&gt;
   &lt;li&gt;Pytorch도 어느정도 사용할 줄 알지만, 과제하는데만 집중해서 정리를 못 했다.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://eunaoeh.github.io/paper%20review/cv/ViT/&quot;&gt;Vision Transformer&lt;/a&gt; 논문 정리를 하긴 했지만 아직 논문을 100% 소화하기에는 부족한 부분도 많고, 핑계지만 시간도 부족해서 제대로 못 해서 아쉬운 부분이 많다. 논문 정리도 하다보면 점점 나아질 것이라고 생각한다.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;개선시도할-점&quot;&gt;개선/시도할 점&lt;/h2&gt;
@@ -28,7 +84,8 @@
   &lt;li&gt;이제 곧 하반기 공채시즌인데 이를 준비하려면 CS, 알고리즘 공부를 열심히 해야할 것 같다.&lt;/li&gt;
   &lt;li&gt;MLOps도 공부하고 싶은데, MLOps가 결국에는 System Pipeline이라는 것이니까 먼저 데이터베이스, 운영체제, 네트워크부터 잘 알아야 할 것 같다. 일단 CS 정리를 한 번 하고, MLOps 강의를 듣던 공부하자.&lt;/li&gt;
   &lt;li&gt;다른 기획도 공부하고 있는데 이번주는 안 했던 터라, 다음주부터는 시간관리를 잘 하는 것이 매우 중요할 것 같다. 피어들과 To-do list 공유를 하지만, 코어타임에 할 것만 공유했는데 개인적으로 무엇을 해야할지 매일 To-do list를 정하고 끝내는 습관이 필요할 것 같다.&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Eunjin</name></author><category term="NAVER AI Tech Boostcamp" /><category term="NAVER AI Tech Boostcamp" /><category term="AI" /><category term="회고록" /><summary type="html">이번주에 한 일 이번주에는 Pytorch에 대한 강의를 들었다. 인턴을 하면서 Pytorch를 대충 사용할 수 있다고 생각했지만 몰랐던 부분, 잊고 있었던 부분을 리마인드 할 수 있었다. 과제 마감에만 집중을 하니 그냥 넘긴 부분도 있어서 다시 복습하고 블로그에 정리해야할 것 같다. 부스트캠프를 하느라 알고리즘, 개인공부, 블로그를 많이 못 했다.</summary></entry><entry><title type="html">Git이란</title><link href="http://localhost:4000/git/git/" rel="alternate" type="text/html" title="Git이란" /><published>2021-08-19T00:00:00+09:00</published><updated>2021-08-19T00:00:00+09:00</updated><id>http://localhost:4000/git/git</id><content type="html" xml:base="http://localhost:4000/git/git/">&lt;p&gt;&amp;lt;현재 작성 중인 페이지입니다!!&amp;gt;&lt;/p&gt;
+  &lt;li&gt;인턴 때 읽었던 논문, 그 동안 공부했던 것들 전부 다 정리하기!!&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Eunjin</name></author><category term="NAVER AI Tech Boostcamp" /><category term="NAVER AI Tech Boostcamp" /><category term="AI" /><category term="회고록" /><summary type="html">이번주에 한 일 이번주에는 Pytorch에 대한 강의를 들었다. 인턴을 하면서 Pytorch를 대충 사용할 수 있다고 생각했지만 몰랐던 부분, 잊고 있었던 부분을 리마인드 할 수 있었다. 과제 마감에만 집중을 하니 그냥 넘긴 부분도 있어서 다시 복습하고 블로그에 정리해야할 것 같다. 부스트캠프를 하느라 알고리즘, 개인공부, 블로그를 많이 못 했다. 안수빈님의 데이터 시각화 강의도 들었다. 라이엇 게임즈 유석문CTO님의 ‘개발자로 산다는것’, ‘Unit Test’ 강의를 들었다.</summary></entry><entry><title type="html">Git이란</title><link href="http://localhost:4000/git/git/" rel="alternate" type="text/html" title="Git이란" /><published>2021-08-19T00:00:00+09:00</published><updated>2021-08-19T00:00:00+09:00</updated><id>http://localhost:4000/git/git</id><content type="html" xml:base="http://localhost:4000/git/git/">&lt;p&gt;&amp;lt;현재 작성 중인 페이지입니다!!&amp;gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;h2 id=&quot;git이란&quot;&gt;Git이란&lt;/h2&gt;
