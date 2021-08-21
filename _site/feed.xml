@@ -1,4 +1,34 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-08-20T03:04:51+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Eunaoeh’s Dev Blog</title><author><name>Eunjin</name></author><entry><title type="html">Git이란</title><link href="http://localhost:4000/git/git/" rel="alternate" type="text/html" title="Git이란" /><published>2021-08-19T00:00:00+09:00</published><updated>2021-08-19T00:00:00+09:00</updated><id>http://localhost:4000/git/git</id><content type="html" xml:base="http://localhost:4000/git/git/">&lt;p&gt;&amp;lt;현재 작성 중 입니다!!&amp;gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-08-21T16:09:47+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Eunaoeh’s Dev Blog</title><author><name>Eunjin</name></author><entry><title type="html">NAVER AI Tech Boostcamp Week3 회고록</title><link href="http://localhost:4000/naver%20ai%20tech%20boostcamp/week3/" rel="alternate" type="text/html" title="NAVER AI Tech Boostcamp Week3 회고록" /><published>2021-08-21T00:00:00+09:00</published><updated>2021-08-21T00:00:00+09:00</updated><id>http://localhost:4000/naver%20ai%20tech%20boostcamp/week3</id><content type="html" xml:base="http://localhost:4000/naver%20ai%20tech%20boostcamp/week3/">&lt;h2 id=&quot;이번주에-한-일&quot;&gt;이번주에 한 일&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;이번주에는 Pytorch에 대한 강의를 들었다. 인턴을 하면서 Pytorch를 대충 사용할 수 있다고 생각했지만 몰랐던 부분, 잊고 있었던 부분을 리마인드 할 수 있었다.&lt;/li&gt;
+  &lt;li&gt;과제 마감에만 집중을 하니 그냥 넘긴 부분도 있어서 다시 복습하고 블로그에 정리해야할 것 같다.&lt;/li&gt;
+  &lt;li&gt;부스트캠프를 하느라 알고리즘, 개인공부, 블로그를 많이 못 했다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;좋았던-점&quot;&gt;좋았던 점&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;과제에서 Pytorch에 대한 Documentation처럼 자세하게 정리를 해주셔서 나중에도 보고 공부하면 많은 도움이 될 것 같다.&lt;/li&gt;
+  &lt;li&gt;기본 Documentation 뿐만 아니라 Ray Tune, Multi-GPU 등에 대해서도 간단하게 설명을 해주셔서 많은 도움이 되었다.&lt;/li&gt;
+  &lt;li&gt;그 동안 Pytorch, Detectron2(CV 프레임워크)처럼 Documentation의 함수를 뜯어보면서 공부를 했었는데 수업에서도 그렇게 하는 게 좋다고 말씀해주셔서 방향을 잘 잡고 공부했구나라는 생각이 들었다.&lt;/li&gt;
+  &lt;li&gt;최성철 교수님의 마스터세션을 듣고, 무엇을 공부하면 될지 조금 더 확신이 생긴 것 같다.&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;아쉬웠던-점&quot;&gt;아쉬웠던 점&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;다른 개인 공부(CS, 알고리즘)를 할 시간이 없어서 아쉬웠다.&lt;/li&gt;
+  &lt;li&gt;MLOps도 공부해야지라고 생각했는데 막상 시간이 잘 안 나는 것 같다. 괜히 한다했다가 개강하고 나면 시간이 아예 없을까봐 걱정된다.&lt;/li&gt;
+  &lt;li&gt;Pytorch를 사용해서 직접 모델을 End-to-End로 구현하고 싶은데 수업정리, 과제마감을 하다보면 지쳐서 하기 힘들었다.&lt;/li&gt;
+  &lt;li&gt;Pytorch도 어느정도 사용할 줄 알지만, 과제하는데만 집중해서 정리를 못 했다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;개선시도할-점&quot;&gt;개선/시도할 점&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;코어타임에 집중해서 끝내고 저녁시간은 내 자유시간으로 사용하자.&lt;/li&gt;
+  &lt;li&gt;이제 곧 하반기 공채시즌인데 이를 준비하려면 CS, 알고리즘 공부를 열심히 해야할 것 같다.&lt;/li&gt;
+  &lt;li&gt;MLOps도 공부하고 싶은데, MLOps가 결국에는 System Pipeline이라는 것이니까 먼저 데이터베이스, 운영체제, 네트워크부터 잘 알아야 할 것 같다. 일단 CS 정리를 한 번 하고, MLOps 강의를 듣던 공부하자.&lt;/li&gt;
+  &lt;li&gt;다른 기획도 공부하고 있는데 이번주는 안 했던 터라, 다음주부터는 시간관리를 잘 하는 것이 매우 중요할 것 같다. 피어들과 To-do list 공유를 하지만, 코어타임에 할 것만 공유했는데 개인적으로 무엇을 해야할지 매일 To-do list를 정하고 끝내는 습관이 필요할 것 같다.&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Eunjin</name></author><category term="NAVER AI Tech Boostcamp" /><category term="NAVER AI Tech Boostcamp" /><category term="AI" /><category term="회고록" /><summary type="html">이번주에 한 일 이번주에는 Pytorch에 대한 강의를 들었다. 인턴을 하면서 Pytorch를 대충 사용할 수 있다고 생각했지만 몰랐던 부분, 잊고 있었던 부분을 리마인드 할 수 있었다. 과제 마감에만 집중을 하니 그냥 넘긴 부분도 있어서 다시 복습하고 블로그에 정리해야할 것 같다. 부스트캠프를 하느라 알고리즘, 개인공부, 블로그를 많이 못 했다.</summary></entry><entry><title type="html">Git이란</title><link href="http://localhost:4000/git/git/" rel="alternate" type="text/html" title="Git이란" /><published>2021-08-19T00:00:00+09:00</published><updated>2021-08-19T00:00:00+09:00</updated><id>http://localhost:4000/git/git</id><content type="html" xml:base="http://localhost:4000/git/git/">&lt;p&gt;&amp;lt;현재 작성 중인 페이지입니다!!&amp;gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;h2 id=&quot;git이란&quot;&gt;Git이란&lt;/h2&gt;
@@ -136,7 +166,7 @@ git pull origin main # 원격 저장소에 있는 파일들을 가져옴
 &lt;ul&gt;
   &lt;li&gt;NAVER AI Boostcamp의 이고잉님의 특강&lt;/li&gt;
   &lt;li&gt;내 머릿속과 노트&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Eunjin</name></author><category term="git" /><category term="git" /><category term="dev" /><summary type="html">&amp;lt;현재 작성 중 입니다!!&amp;gt;</summary></entry><entry><title type="html">[논문리뷰] Vision Transformer(ViT)</title><link href="http://localhost:4000/paper%20review/cv/ViT/" rel="alternate" type="text/html" title="[논문리뷰] Vision Transformer(ViT)" /><published>2021-08-17T00:00:00+09:00</published><updated>2021-08-17T00:00:00+09:00</updated><id>http://localhost:4000/paper%20review/cv/ViT</id><content type="html" xml:base="http://localhost:4000/paper%20review/cv/ViT/">&lt;p&gt;&lt;br /&gt;&lt;br /&gt;
+&lt;/ul&gt;</content><author><name>Eunjin</name></author><category term="git" /><category term="git" /><category term="dev" /><summary type="html">&amp;lt;현재 작성 중인 페이지입니다!!&amp;gt;</summary></entry><entry><title type="html">[논문리뷰] Vision Transformer(ViT)</title><link href="http://localhost:4000/paper%20review/cv/ViT/" rel="alternate" type="text/html" title="[논문리뷰] Vision Transformer(ViT)" /><published>2021-08-17T00:00:00+09:00</published><updated>2021-08-17T00:00:00+09:00</updated><id>http://localhost:4000/paper%20review/cv/ViT</id><content type="html" xml:base="http://localhost:4000/paper%20review/cv/ViT/">&lt;p&gt;&lt;br /&gt;&lt;br /&gt;
 논문: &lt;a href=&quot;https://arxiv.org/pdf/2010.11929.pdf&quot;&gt;“An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale”&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;핵심-요약&quot;&gt;핵심 요약&lt;/h2&gt;

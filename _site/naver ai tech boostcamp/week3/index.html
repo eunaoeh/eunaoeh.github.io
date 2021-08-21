@@ -1,0 +1,493 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="ko" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>NAVER AI Tech Boostcamp Week3 회고록 - Eunaoeh’s Dev Blog</title>
+<meta name="description" content="이번주에 한 일    이번주에는 Pytorch에 대한 강의를 들었다. 인턴을 하면서 Pytorch를 대충 사용할 수 있다고 생각했지만 몰랐던 부분, 잊고 있었던 부분을 리마인드 할 수 있었다.   과제 마감에만 집중을 하니 그냥 넘긴 부분도 있어서 다시 복습하고 블로그에 정리해야할 것 같다.   부스트캠프를 하느라 알고리즘, 개인공부, 블로그를 많이 못 했다.">
+
+
+  <meta name="author" content="Eunjin">
+  
+  <meta property="article:author" content="Eunjin">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ko">
+<meta property="og:site_name" content="Eunaoeh's Dev Blog">
+<meta property="og:title" content="NAVER AI Tech Boostcamp Week3 회고록">
+<meta property="og:url" content="http://localhost:4000/naver%20ai%20tech%20boostcamp/week3/">
+
+
+  <meta property="og:description" content="이번주에 한 일    이번주에는 Pytorch에 대한 강의를 들었다. 인턴을 하면서 Pytorch를 대충 사용할 수 있다고 생각했지만 몰랐던 부분, 잊고 있었던 부분을 리마인드 할 수 있었다.   과제 마감에만 집중을 하니 그냥 넘긴 부분도 있어서 다시 복습하고 블로그에 정리해야할 것 같다.   부스트캠프를 하느라 알고리즘, 개인공부, 블로그를 많이 못 했다.">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2021-08-21T00:00:00+09:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/naver%20ai%20tech%20boostcamp/week3/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Eunjin",
+      "url": "http://localhost:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Eunaoeh's Dev Blog Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+    
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Eunaoeh's Dev Blog
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/about/">About</a>
+            </li><li class="masthead__menu-item">
+              <a href="/">Home</a>
+            </li><li class="masthead__menu-item">
+              <a href="/categories/">Categories</a>
+            </li><li class="masthead__menu-item">
+              <a href="/tags/">Tags</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <i class="fas fa-search"></i>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">토글 메뉴</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
+
+  
+    <div class="author__avatar">
+      <a href="http://localhost:4000/">
+        <img src="/assets/images/portfolio.jpeg" alt="Eunjin" itemprop="image" class="u-photo">
+      </a>
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name p-name" itemprop="name">
+      <a class="u-url" rel="me" href="http://localhost:4000/" itemprop="url">Eunjin</a>
+    </h3>
+    
+      <div class="author__bio p-note" itemprop="description">
+        <p>ᕙ(^▿^-ᕙ)</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">팔로우</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name" class="p-locality">Somewhere in Korea</span>
+        </li>
+      
+
+      
+        
+          
+            <li><a href="eunjinhh131@gmail.com" rel="nofollow noopener noreferrer me"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span></a></li>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <li><a href="https://github.com/eunaoeh" rel="nofollow noopener noreferrer me"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+  
+  </div>
+
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="NAVER AI Tech Boostcamp Week3 회고록">
+    <meta itemprop="description" content="이번주에 한 일  이번주에는 Pytorch에 대한 강의를 들었다. 인턴을 하면서 Pytorch를 대충 사용할 수 있다고 생각했지만 몰랐던 부분, 잊고 있었던 부분을 리마인드 할 수 있었다.  과제 마감에만 집중을 하니 그냥 넘긴 부분도 있어서 다시 복습하고 블로그에 정리해야할 것 같다.  부스트캠프를 하느라 알고리즘, 개인공부, 블로그를 많이 못 했다.">
+    <meta itemprop="datePublished" content="2021-08-21T00:00:00+09:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="http://localhost:4000/naver%20ai%20tech%20boostcamp/week3/" class="u-url" itemprop="url">NAVER AI Tech Boostcamp Week3 회고록
+</a>
+          </h1>
+          
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          1 분 소요
+        
+      </span>
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On This Page</h4></header>
+              <ul class="toc__menu"><li><a href="#이번주에-한-일">이번주에 한 일</a></li><li><a href="#좋았던-점">좋았던 점</a></li><li><a href="#아쉬웠던-점">아쉬웠던 점</a></li><li><a href="#개선시도할-점">개선/시도할 점</a></li></ul>
+
+            </nav>
+          </aside>
+        
+        <h2 id="이번주에-한-일">이번주에 한 일</h2>
+<ul>
+  <li>이번주에는 Pytorch에 대한 강의를 들었다. 인턴을 하면서 Pytorch를 대충 사용할 수 있다고 생각했지만 몰랐던 부분, 잊고 있었던 부분을 리마인드 할 수 있었다.</li>
+  <li>과제 마감에만 집중을 하니 그냥 넘긴 부분도 있어서 다시 복습하고 블로그에 정리해야할 것 같다.</li>
+  <li>부스트캠프를 하느라 알고리즘, 개인공부, 블로그를 많이 못 했다.</li>
+</ul>
+
+<h2 id="좋았던-점">좋았던 점</h2>
+<ul>
+  <li>과제에서 Pytorch에 대한 Documentation처럼 자세하게 정리를 해주셔서 나중에도 보고 공부하면 많은 도움이 될 것 같다.</li>
+  <li>기본 Documentation 뿐만 아니라 Ray Tune, Multi-GPU 등에 대해서도 간단하게 설명을 해주셔서 많은 도움이 되었다.</li>
+  <li>그 동안 Pytorch, Detectron2(CV 프레임워크)처럼 Documentation의 함수를 뜯어보면서 공부를 했었는데 수업에서도 그렇게 하는 게 좋다고 말씀해주셔서 방향을 잘 잡고 공부했구나라는 생각이 들었다.</li>
+  <li>최성철 교수님의 마스터세션을 듣고, 무엇을 공부하면 될지 조금 더 확신이 생긴 것 같다.</li>
+  <li></li>
+</ul>
+
+<h2 id="아쉬웠던-점">아쉬웠던 점</h2>
+<ul>
+  <li>다른 개인 공부(CS, 알고리즘)를 할 시간이 없어서 아쉬웠다.</li>
+  <li>MLOps도 공부해야지라고 생각했는데 막상 시간이 잘 안 나는 것 같다. 괜히 한다했다가 개강하고 나면 시간이 아예 없을까봐 걱정된다.</li>
+  <li>Pytorch를 사용해서 직접 모델을 End-to-End로 구현하고 싶은데 수업정리, 과제마감을 하다보면 지쳐서 하기 힘들었다.</li>
+  <li>Pytorch도 어느정도 사용할 줄 알지만, 과제하는데만 집중해서 정리를 못 했다.</li>
+</ul>
+
+<h2 id="개선시도할-점">개선/시도할 점</h2>
+<ul>
+  <li>코어타임에 집중해서 끝내고 저녁시간은 내 자유시간으로 사용하자.</li>
+  <li>이제 곧 하반기 공채시즌인데 이를 준비하려면 CS, 알고리즘 공부를 열심히 해야할 것 같다.</li>
+  <li>MLOps도 공부하고 싶은데, MLOps가 결국에는 System Pipeline이라는 것이니까 먼저 데이터베이스, 운영체제, 네트워크부터 잘 알아야 할 것 같다. 일단 CS 정리를 한 번 하고, MLOps 강의를 듣던 공부하자.</li>
+  <li>다른 기획도 공부하고 있는데 이번주는 안 했던 터라, 다음주부터는 시간관리를 잘 하는 것이 매우 중요할 것 같다. 피어들과 To-do list 공유를 하지만, 코어타임에 할 것만 공유했는데 개인적으로 무엇을 해야할지 매일 To-do list를 정하고 끝내는 습관이 필요할 것 같다.</li>
+</ul>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> 태그: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/tags/#ai" class="page__taxonomy-item p-category" rel="tag">AI</a><span class="sep">, </span>
+    
+      <a href="/tags/#naver-ai-tech-boostcamp" class="page__taxonomy-item p-category" rel="tag">NAVER AI Tech Boostcamp</a><span class="sep">, </span>
+    
+      <a href="/tags/#%ED%9A%8C%EA%B3%A0%EB%A1%9D" class="page__taxonomy-item p-category" rel="tag">회고록</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> 카테고리: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/categories/#naver-ai-tech-boostcamp" class="page__taxonomy-item p-category" rel="tag">NAVER AI Tech Boostcamp</a>
+    
+    </span>
+  </p>
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time class="dt-published" datetime="2021-08-21T00:00:00+09:00">August 21, 2021</time></p>
+
+      </footer>
+
+      
+
+      
+  <nav class="pagination">
+    
+      <a href="/git/git/" class="pagination--pager" title="Git이란
+">이전</a>
+    
+    
+      <a href="#" class="pagination--pager disabled">다음</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';" role="search">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="검색어를 입력하세요..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>팔로우:</strong></li>
+    
+
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> 피드</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2021 Eunjin. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+
+
+
+  </body>
+</html>
